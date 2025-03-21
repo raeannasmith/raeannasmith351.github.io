@@ -1,0 +1,259 @@
+h1 {
+  text-align: center;
+  background-color: #ff97c4;
+  font-family: "Lora", serif;
+}
+
+.p {
+  font-family: "Georgia", serif;
+}
+
+/* Style the navbar */
+.navbar {
+  background-color: #89d2a3; /* Soft green background */
+  padding: 10px 0;
+  text-align: center;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  left: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the list to be in a row */
+.navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* Style each nav item */
+.nav-item {
+  display: inline-block;
+}
+
+/* Style the links to look like buttons */
+.nav-item a {
+  display: inline-block;
+  padding: 12px 18px;
+  background-color: #ffc8c4; /* Light pink */
+  color: #333; /* Dark text for contrast */
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition:
+    0.3s ease,
+    transform 0.2s ease;
+  border: 2px solid #ff97c4; /* Slight border for depth */
+}
+
+/* Hover effect */
+.nav-item a:hover {
+  background-color: #ffb0c4;
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Active/selected effect */
+.nav-item a:active {
+  background-color: #ff97c4;
+  transform: translateY(0);
+}
+
+/* Main content styling */
+.index-page main {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.index-page img {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Section headers */
+.index-page h2 {
+  color: rgb(254, 126, 148);
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+/* About Me & Goals sections */
+.index-page p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/* Meal Page Layout */
+.meal-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center aligns all meal cards */
+  align-items: center;
+  gap: 20px;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* Meal Cards */
+.meal-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 280px; /* Standardized width for meal cards */
+}
+
+/* Meal Titles */
+.meal-card dt {
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #ff97c4;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+/* Meal Descriptions */
+.meal-card dd {
+  background-color: #ffb0c4;
+  padding: 8px;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.workout-container {
+  display: flex; /* Makes items inside line up */
+  flex-direction: column; /* First, stack items vertically */
+  align-items: center; /* Centers everything horizontally */
+  max-width: 1000px; /* Keeps content from getting too wide */
+  margin: 0 auto;
+}
+/* Workout info section - stays at the top */
+.workout-info {
+  width: 100%; /* Makes it full width */
+  text-align: center; /* Centers the text */
+  padding: 20px;
+  background-color: #ffc8c4; /* Light pink */
+  border-radius: 10px;
+  color: #42684f;
+}
+
+.workout-layout {
+  display: flex; /* Puts them side by side */
+  justify-content: space-between; /* Adds space between them */
+  align-items: flex-start; /* Aligns them at the top */
+  gap: 20px; /* Adds some space between them */
+  padding: 20px;
+  width: 100%;
+  max-width: 1000px; /* Keeps it from getting too stretched */
+}
+/* Workout content - on the left */
+.workout-content {
+  flex: 2; /* Makes it take up more space */
+  max-width: 60%; /* Controls width */
+  padding: 20px;
+  background-color: #ffb0c4; /* Medium pink */
+  border-radius: 10px;
+  color: #42684f;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Image section - on the right */
+.workout-image {
+  flex: 1; /* Makes it take up less space */
+  max-width: 35%; /* Controls width */
+}
+
+.workout-image img {
+  width: 100%; /* Makes sure it fits the box */
+  border-radius: 10px; /* Soft corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow for a nice look */
+}
+
+/* Centering the main content */
+.motivation {
+  max-width: 800px; /* Restricts content width for readability */
+  margin: 0 auto; /* Centers content horizontally */
+  text-align: center; /* Centers text */
+  padding: 20px;
+}
+
+/* Change the font for the h2 */
+.motivation h2 {
+  font-family: "Georgia", serif; /* Georgia is a common serif font */
+  font-size: 2rem;
+  color: rgb(254, 126, 148);
+  margin-bottom: 10px;
+}
+
+/* Style the paragraphs */
+.motivation p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #333; /* Dark gray for readability */
+  margin-bottom: 15px;
+}
+
+/* Image styling */
+.girlgains-img {
+  width: 100%; /* This ensures the image scales to the width of its container */
+  max-width: 500px; /* This limits the maximum width to 500px */
+  height: auto; /* Keeps the aspect ratio intact */
+  border-radius: 15px; /* Adds rounded corners */
+  display: block; /* Centers the image */
+  margin: 20px auto; /* Adds space around the image */
+}
+
+/* Instagram link styling */
+.instagram-link {
+  font-size: 1.5rem; /* Larger font size */
+  font-weight: bold;
+  color: #e1306c; /* Instagram brand color */
+  text-decoration: none; /* Removes underline */
+  background-color: #fff0f5; /* Light pink background for contrast */
+  padding: 10px; /* Adds padding around the text */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+  display: inline-block; /* Keeps it inline but gives block-level properties */
+}
+
+.instagram-link:hover {
+  background-color: #f7a7c2; /* Instagram color on hover */
+  color: white; /* Change text color to white on hover */
+}
+.instagram {
+  background-color: #ffc8c4; /* Light pink background color */
+  color: #e1306c; /* Instagram red/pink color for the text */
+  font-size: 1.2rem; /* Slightly larger font size for emphasis */
+  padding: 20px; /* Adds space inside the border */
+  text-align: center; /* Centers the text */
+  border-radius: 10px; /* Rounds the corners of the banner */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+  margin: 20px auto; /* Centers the banner and adds space around it */
+  max-width: 600px; /* Restricts the maximum width of the banner */
+  font-weight: bold; /* Makes the text bold */
+}
+/* Paragraph styling to add spacing between paragraphs */
+.club p {
+  margin-bottom: 20px; /* Adds space below each paragraph */
+  line-height: 1.6; /* Increases line spacing for better readability */
+  padding: 0 10px; /* Adds horizontal padding to avoid text touching edges */
+  text-align: center;
+}
+.club h2 {
+  margin-top: 30px; /* Adds space above the heading */
+  color: rgb(254, 126, 148);
+  text-align: center;
+}
